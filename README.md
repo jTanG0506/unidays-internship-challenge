@@ -1,4 +1,4 @@
-# UNiDAYS Discounts Programming Challenge
+![](header.png)
 
 ## Introduction
 
