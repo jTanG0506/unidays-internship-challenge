@@ -51,7 +51,7 @@ class UnidaysChallengeTests: XCTestCase {
     
     instance.addItemsToBasketWith(ids: basket)
     let result = instance.calculateTotalPrice()
-    XCTAssert(tuplesMatch(result, expected), "Basket 'A' Failed")
+    XCTAssert(tuplesMatch(result, expected), "Basket '\(basket)' Failed")
   }
   
   func testBasketWithOnlyOneProductB() {
@@ -60,7 +60,7 @@ class UnidaysChallengeTests: XCTestCase {
     
     instance.addItemsToBasketWith(ids: basket)
     let result = instance.calculateTotalPrice()
-    XCTAssert(tuplesMatch(result, expected), "Basket 'B' Failed")
+    XCTAssert(tuplesMatch(result, expected), "Basket '\(basket)' Failed")
   }
   
   func testBasketWithOnlyOneProductC() {
@@ -69,7 +69,7 @@ class UnidaysChallengeTests: XCTestCase {
     
     instance.addItemsToBasketWith(ids: basket)
     let result = instance.calculateTotalPrice()
-    XCTAssert(tuplesMatch(result, expected), "Basket 'C' Failed")
+    XCTAssert(tuplesMatch(result, expected), "Basket '\(basket)' Failed")
   }
   
   func testBasketWithOnlyOneProductD() {
@@ -78,7 +78,7 @@ class UnidaysChallengeTests: XCTestCase {
     
     instance.addItemsToBasketWith(ids: basket)
     let result = instance.calculateTotalPrice()
-    XCTAssert(tuplesMatch(result, expected), "Basket 'D' Failed")
+    XCTAssert(tuplesMatch(result, expected), "Basket '\(basket)' Failed")
   }
   
   func testBasketWithOnlyOneProductE() {
@@ -87,7 +87,97 @@ class UnidaysChallengeTests: XCTestCase {
     
     instance.addItemsToBasketWith(ids: basket)
     let result = instance.calculateTotalPrice()
-    XCTAssert(tuplesMatch(result, expected), "Basket 'E' Failed")
+    XCTAssert(tuplesMatch(result, expected), "Basket '\(basket)' Failed")
+  }
+  
+  func testBasketWithOneTypeOfProductWhichInvokesDiscountWithBasketBB() {
+    let basket = "BB"
+    let expected = (total: 20.0, delivery: 7.0)
+    
+    instance.addItemsToBasketWith(ids: basket)
+    let result = instance.calculateTotalPrice()
+    XCTAssert(tuplesMatch(result, expected), "Basket '\(basket)' Failed")
+  }
+  
+  func testBasketWithOneTypeOfProductWhichInvokesDiscountWithBasketBBB() {
+    let basket = "BBB"
+    let expected = (total: 32.0, delivery: 7.0)
+    
+    instance.addItemsToBasketWith(ids: basket)
+    let result = instance.calculateTotalPrice()
+    XCTAssert(tuplesMatch(result, expected), "Basket '\(basket)' Failed")
+  }
+  
+  func testBasketWithOneTypeOfProductWhichInvokesDiscountWithBasketBBBB() {
+    let basket = "BBBB"
+    let expected = (total: 40.0, delivery: 7.0)
+    
+    instance.addItemsToBasketWith(ids: basket)
+    let result = instance.calculateTotalPrice()
+    XCTAssert(tuplesMatch(result, expected), "Basket '\(basket)' Failed")
+  }
+  
+  func testBasketWithOneTypeOfProductWhichInvokesDiscountWithBasketCCC() {
+    let basket = "CCC"
+    let expected = (total: 10.0, delivery: 7.0)
+    
+    instance.addItemsToBasketWith(ids: basket)
+    let result = instance.calculateTotalPrice()
+    XCTAssert(tuplesMatch(result, expected), "Basket '\(basket)' Failed")
+  }
+  
+  func testBasketWithOneTypeOfProductWhichInvokesDiscountWithBasketCCCC() {
+    let basket = "CCCC"
+    let expected = (total: 14.0, delivery: 7.0)
+    
+    instance.addItemsToBasketWith(ids: basket)
+    let result = instance.calculateTotalPrice()
+    XCTAssert(tuplesMatch(result, expected), "Basket '\(basket)' Failed")
+  }
+  
+  func testBasketWithOneTypeOfProductWhichInvokesDiscountWithBasketDD() {
+    let basket = "DD"
+    let expected = (total: 7.0, delivery: 7.0)
+    
+    instance.addItemsToBasketWith(ids: basket)
+    let result = instance.calculateTotalPrice()
+    XCTAssert(tuplesMatch(result, expected), "Basket '\(basket)' Failed")
+  }
+  
+  func testBasketWithOneTypeOfProductWhichInvokesDiscountWithBasketDDD() {
+    let basket = "DDD"
+    let expected = (total: 14.0, delivery: 7.0)
+    
+    instance.addItemsToBasketWith(ids: basket)
+    let result = instance.calculateTotalPrice()
+    XCTAssert(tuplesMatch(result, expected), "Basket '\(basket)' Failed")
+  }
+  
+  func testBasketWithOneTypeOfProductWhichInvokesDiscountWithBasketEE() {
+    let basket = "EE"
+    let expected = (total: 10.0, delivery: 7.0)
+    
+    instance.addItemsToBasketWith(ids: basket)
+    let result = instance.calculateTotalPrice()
+    XCTAssert(tuplesMatch(result, expected), "Basket '\(basket)' Failed")
+  }
+  
+  func testBasketWithOneTypeOfProductWhichInvokesDiscountWithBasketEEE() {
+    let basket = "EEE"
+    let expected = (total: 10.0, delivery: 7.0)
+    
+    instance.addItemsToBasketWith(ids: basket)
+    let result = instance.calculateTotalPrice()
+    XCTAssert(tuplesMatch(result, expected), "Basket '\(basket)' Failed")
+  }
+  
+  func testBasketWithOneTypeOfProductWhichInvokesDiscountWithBasketEEEE() {
+    let basket = "EEEE"
+    let expected = (total: 15.0, delivery: 7.0)
+    
+    instance.addItemsToBasketWith(ids: basket)
+    let result = instance.calculateTotalPrice()
+    XCTAssert(tuplesMatch(result, expected), "Basket '\(basket)' Failed")
   }
   
 }
