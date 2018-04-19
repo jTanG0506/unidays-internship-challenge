@@ -180,4 +180,40 @@ class UnidaysChallengeTests: XCTestCase {
     XCTAssert(tuplesMatch(result, expected), "Basket '\(basket)' Failed")
   }
   
+  func testBasketJustUnderFreeDeliveryThreshold() {
+    let basket = "DDDDDDDDDDDDDD"
+    let expected = (total: 49.0, delivery: 7.0)
+    
+    instance.addItemsToBasketWith(ids: basket)
+    let result = instance.calculateTotalPrice()
+    XCTAssert(tuplesMatch(result, expected), "Basket '\(basket)' Failed")
+  }
+  
+  func testBasketEligibleForFreeDeliveryWithBasketBBBBCCC() {
+    let basket = "BBBBCCC"
+    let expected = (total: 50.0, delivery: 0.0)
+    
+    instance.addItemsToBasketWith(ids: basket)
+    let result = instance.calculateTotalPrice()
+    XCTAssert(tuplesMatch(result, expected), "Basket '\(basket)' Failed")
+  }
+  
+  func testBasketEligibleForFreeDeliveryWithBasketABBCCCDDEE() {
+    let basket = "ABBCCCDDEE"
+    let expected = (total: 55.0, delivery: 0.0)
+    
+    instance.addItemsToBasketWith(ids: basket)
+    let result = instance.calculateTotalPrice()
+    XCTAssert(tuplesMatch(result, expected), "Basket '\(basket)' Failed")
+  }
+  
+  func testBasketEligibleForFreeDeliveryWithBasketEDCBAEDCBC() {
+    let basket = "EDCBAEDCBC"
+    let expected = (total: 55.0, delivery: 0.0)
+    
+    instance.addItemsToBasketWith(ids: basket)
+    let result = instance.calculateTotalPrice()
+    XCTAssert(tuplesMatch(result, expected), "Basket '\(basket)' Failed")
+  }
+  
 }
