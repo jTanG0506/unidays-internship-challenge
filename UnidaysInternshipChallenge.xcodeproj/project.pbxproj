@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D141EBB2088A4C40053C87F /* UnidaysChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D141EBA2088A4C40053C87F /* UnidaysChallengeTests.swift */; };
+		8D141EC02088A8F20053C87F /* UnidaysDiscountChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD643AC203A0B7A00447072 /* UnidaysDiscountChallenge.swift */; };
+		8D141EC12088A8F50053C87F /* ProductAndRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD643AE203A0BDC00447072 /* ProductAndRules.swift */; };
 		8DD643A6203A0B4900447072 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD643A5203A0B4900447072 /* main.swift */; };
 		8DD643AD203A0B7A00447072 /* UnidaysDiscountChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD643AC203A0B7A00447072 /* UnidaysDiscountChallenge.swift */; };
 		8DD643AF203A0BDC00447072 /* ProductAndRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD643AE203A0BDC00447072 /* ProductAndRules.swift */; };
@@ -25,6 +28,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8D141EB82088A4C40053C87F /* UnidaysChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnidaysChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D141EBA2088A4C40053C87F /* UnidaysChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnidaysChallengeTests.swift; sourceTree = "<group>"; };
+		8D141EBC2088A4C40053C87F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DD643A2203A0B4900447072 /* UnidaysInternshipChallenge */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnidaysInternshipChallenge; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD643A5203A0B4900447072 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		8DD643AC203A0B7A00447072 /* UnidaysDiscountChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnidaysDiscountChallenge.swift; sourceTree = "<group>"; };
@@ -32,6 +38,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8D141EB52088A4C40053C87F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DD6439F203A0B4900447072 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -42,10 +55,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D141EB92088A4C40053C87F /* UnidaysChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				8D141EBA2088A4C40053C87F /* UnidaysChallengeTests.swift */,
+				8D141EBC2088A4C40053C87F /* Info.plist */,
+			);
+			path = UnidaysChallengeTests;
+			sourceTree = "<group>";
+		};
 		8DD64399203A0B4900447072 = {
 			isa = PBXGroup;
 			children = (
 				8DD643A4203A0B4900447072 /* UnidaysInternshipChallenge */,
+				8D141EB92088A4C40053C87F /* UnidaysChallengeTests */,
 				8DD643A3203A0B4900447072 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				8DD643A2203A0B4900447072 /* UnidaysInternshipChallenge */,
+				8D141EB82088A4C40053C87F /* UnidaysChallengeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +95,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8D141EB72088A4C40053C87F /* UnidaysChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D141EBF2088A4C40053C87F /* Build configuration list for PBXNativeTarget "UnidaysChallengeTests" */;
+			buildPhases = (
+				8D141EB42088A4C40053C87F /* Sources */,
+				8D141EB52088A4C40053C87F /* Frameworks */,
+				8D141EB62088A4C40053C87F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnidaysChallengeTests;
+			productName = UnidaysChallengeTests;
+			productReference = 8D141EB82088A4C40053C87F /* UnidaysChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8DD643A1203A0B4900447072 /* UnidaysInternshipChallenge */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DD643A9203A0B4900447072 /* Build configuration list for PBXNativeTarget "UnidaysInternshipChallenge" */;
@@ -94,10 +135,14 @@
 		8DD6439A203A0B4900447072 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = jtang0506;
 				TargetAttributes = {
+					8D141EB72088A4C40053C87F = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+					};
 					8DD643A1203A0B4900447072 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -117,11 +162,32 @@
 			projectRoot = "";
 			targets = (
 				8DD643A1203A0B4900447072 /* UnidaysInternshipChallenge */,
+				8D141EB72088A4C40053C87F /* UnidaysChallengeTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		8D141EB62088A4C40053C87F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		8D141EB42088A4C40053C87F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D141EC02088A8F20053C87F /* UnidaysDiscountChallenge.swift in Sources */,
+				8D141EBB2088A4C40053C87F /* UnidaysChallengeTests.swift in Sources */,
+				8D141EC12088A8F50053C87F /* ProductAndRules.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DD6439E203A0B4900447072 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -135,6 +201,42 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		8D141EBD2088A4C40053C87F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HKNDM66956;
+				INFOPLIST_FILE = UnidaysChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.jtang0506.UnidaysChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		8D141EBE2088A4C40053C87F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HKNDM66956;
+				INFOPLIST_FILE = UnidaysChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.jtang0506.UnidaysChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 		8DD643A7203A0B4900447072 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -149,6 +251,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -156,6 +259,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -206,6 +310,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -213,6 +318,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -264,6 +370,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8D141EBF2088A4C40053C87F /* Build configuration list for PBXNativeTarget "UnidaysChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D141EBD2088A4C40053C87F /* Debug */,
+				8D141EBE2088A4C40053C87F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8DD6439D203A0B4900447072 /* Build configuration list for PBXProject "UnidaysInternshipChallenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
