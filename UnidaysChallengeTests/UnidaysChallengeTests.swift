@@ -35,6 +35,7 @@ class UnidaysChallengeTests: XCTestCase {
     return input.0 == expected.0 && input.1 == expected.1
   }
   
+  // Test Case 1
   func testEmptyBasket() {
     let basket = ""
     let expected = (total: 0.0, delivery: 0.0)
@@ -42,6 +43,51 @@ class UnidaysChallengeTests: XCTestCase {
     instance.addItemsToBasketWith(ids: basket)
     let result = instance.calculateTotalPrice()
     XCTAssert(tuplesMatch(result, expected), "Empty Basket Test Failed")
+  }
+  
+  func testBasketWithOnlyOneProductA() {
+    let basket = "A"
+    let expected = (total: 8.0, delivery: 7.0)
+    
+    instance.addItemsToBasketWith(ids: basket)
+    let result = instance.calculateTotalPrice()
+    XCTAssert(tuplesMatch(result, expected), "Basket 'A' Failed")
+  }
+  
+  func testBasketWithOnlyOneProductB() {
+    let basket = "B"
+    let expected = (total: 12.0, delivery: 7.0)
+    
+    instance.addItemsToBasketWith(ids: basket)
+    let result = instance.calculateTotalPrice()
+    XCTAssert(tuplesMatch(result, expected), "Basket 'B' Failed")
+  }
+  
+  func testBasketWithOnlyOneProductC() {
+    let basket = "C"
+    let expected = (total: 4.0, delivery: 7.0)
+    
+    instance.addItemsToBasketWith(ids: basket)
+    let result = instance.calculateTotalPrice()
+    XCTAssert(tuplesMatch(result, expected), "Basket 'C' Failed")
+  }
+  
+  func testBasketWithOnlyOneProductD() {
+    let basket = "D"
+    let expected = (total: 7.0, delivery: 7.0)
+    
+    instance.addItemsToBasketWith(ids: basket)
+    let result = instance.calculateTotalPrice()
+    XCTAssert(tuplesMatch(result, expected), "Basket 'D' Failed")
+  }
+  
+  func testBasketWithOnlyOneProductE() {
+    let basket = "E"
+    let expected = (total: 5.0, delivery: 7.0)
+    
+    instance.addItemsToBasketWith(ids: basket)
+    let result = instance.calculateTotalPrice()
+    XCTAssert(tuplesMatch(result, expected), "Basket 'E' Failed")
   }
   
 }
